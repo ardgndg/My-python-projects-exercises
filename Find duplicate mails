@@ -1,0 +1,10 @@
+email_list = ['roger@hey.com','michael@hey.com','roger@hey.com','prince@gmail.com']
+duplicate_list = []
+for email in email_list:
+    if email_list.count(email) == 2:
+        duplicate_list.append(email)
+        email_list.remove(email)
+print(duplicate_list)
+print(email_list)
+
+     
