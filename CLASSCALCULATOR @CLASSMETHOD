@@ -1,0 +1,16 @@
+class Calculator:
+  def __init__(self,type):
+    self.type = type
+
+  @classmethod
+  def calculate_sum(cls,num1,num2):
+        cls.num1 = num1
+        cls.num2 = num2
+   
+        return num1 + num2
+    # cls is just like self which needs to passed as 1st parameter
+
+
+a = int(input())
+b = int(input())
+print(Calculator.calculate_sum(a,b))
