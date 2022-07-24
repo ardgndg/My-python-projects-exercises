@@ -1,0 +1,16 @@
+class SoccerPlayer:
+  def __init__(self, name, goals):
+    self.name = name
+    self.goals = goals
+
+
+def calculateMaxGoals(*args):
+  print(args)
+  return max(*args)
+
+messi = SoccerPlayer('messi', 10)
+ronaldo = SoccerPlayer('ronaldo',22)
+neymar = SoccerPlayer('neymar', 8)
+
+max_goals = calculateMaxGoals(messi.goals, ronaldo.goals, neymar.goals)
+print(f'The highest number of goals is {max_goals} goals')
