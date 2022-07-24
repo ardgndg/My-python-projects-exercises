@@ -1,0 +1,20 @@
+class Avenger:
+    
+    def __init__(self, name,weapon,ozelguc):
+        self.name = name
+        self.weapon = weapon
+        self.ozelguc = input("yaz buraa")
+    
+ 
+        
+
+    def fight(self):
+        print(self.weapon)
+        print(self.ozelguc)
+        print(self.name)
+
+spiderman = Avenger('Spiderman', 'dispatch a web',())
+thor = Avenger('Thor', 'thunder attack',())
+spiderman.fight()
+thor.fight()
+
