@@ -1,0 +1,15 @@
+Encapsulation - While covering the basics of OOP in my previous post, I already covered about Encapsulation indirectly.
+Encapsulation in simple terms means to create a container where attributes and actions associated with those attributes are grouped together.
+class Avenger:
+  def __init__(self, name, knownAs):
+    self.name = name
+    self.knownAs = knownAs
+
+  def reveal_identity(self):
+    print(f'I am {self.name}, also known as {self.knownAs}')
+
+hulk = Avenger('Bruce Banner', 'Hulk')
+iron_man = Avenger('Tony Stark', 'IronMan')
+
+hulk.reveal_identity() # I am Bruce Banner, also known as Hulk
+iron_man.reveal_identity() # I am Tony Stark, also known as IronMan
