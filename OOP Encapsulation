@@ -13,3 +13,14 @@ iron_man = Avenger('Tony Stark', 'IronMan')
 
 hulk.reveal_identity() # I am Bruce Banner, also known as Hulk
 iron_man.reveal_identity() # I am Tony Stark, also known as IronMan
+
+2.ÖRNEK
+class cars:
+    def __init__(self,brand,model):
+        self.brand = brand
+        self.model = model
+    def coolness(self):
+        print(f"Brand of {self.brand} is reall good and cool {self.model} of the {self.brand}")
+    
+a = cars("BMW",2018)
+a.coolness()
