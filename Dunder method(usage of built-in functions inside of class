@@ -1,0 +1,14 @@
+class Sentence:
+  words = []
+
+  def add_word(self, word):
+    self.words.append(word)
+    
+
+  def __len__(self):
+    return len(self.words)
+
+new_sentence = Sentence()
+new_sentence.add_word('Hello')
+new_sentence.add_word('World')
+print(len(new_sentence))
