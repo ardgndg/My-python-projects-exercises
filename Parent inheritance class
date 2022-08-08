@@ -1,0 +1,21 @@
+class Player:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def run(self):
+    return f'{self.name} is running'
+
+class Cricketer(Player): # Syntax to inherit a class
+  def catch_ball(self):
+    return f'{self.name} Caught the ball'
+
+class Batsman(Cricketer):
+  def swing_bat(self):
+    return f'what a shot by {self.name}'
+
+player1 = Batsman('Virat Kohli', 31)
+
+print(player1.run())
+print(player1.catch_ball())
+print(player1.swing_bat())
