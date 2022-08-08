@@ -1,0 +1,9 @@
+class mother:
+    def __init__(self,name,race="White"):
+        self.race = race
+        print(name,race)
+class son(mother):
+    def writer(self,race):
+        super().__init__(race)
+
+arda = son("Arda")
