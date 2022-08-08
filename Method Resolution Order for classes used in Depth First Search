@@ -1,0 +1,20 @@
+Method Resolution Order
+Method Resolution Order or mro in short, is the order in which properties and methods are inherited in Python.
+
+When inheriting from multiple classes, the properties and methods are inherited by the child class in a specific hierarchy. The underlying algorithm that implements this in Python uses Depth first search algorithm.
+class Employee:
+  secret_code = 'secret'
+
+class Manager(Employee):
+  secret_code = 'm123'
+
+class Accountant(Employee):
+  secret_code = 'a123'
+
+class Owner(Manager, Accountant):
+  pass
+
+person = Owner()
+print(person.secret_code) # m123
+To know the order of inheritance, Python provides a method mro that can be called on the object to view the hierarchy of inheritance
+print(Owner.mro()) # try in a python console with above code to see the r
