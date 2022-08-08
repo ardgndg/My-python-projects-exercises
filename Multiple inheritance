@@ -1,0 +1,18 @@
+class Batsman:
+  def swing_bat(self):
+    return f'What a shot! by {self.name}'
+    
+
+class Bowler:
+  def bowl_bouncer(self):
+    return f'What a bouncer! by {self.name}'
+
+class AllRounder(Batsman,Bowler):
+    def __init__(self,name):
+        self.name = name
+  
+
+player = AllRounder("Arda")
+
+print(player.bowl_bouncer()) # What a shot! by arda
+print(player.swing_bat()) # What a bouncer! by arda
