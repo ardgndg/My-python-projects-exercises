@@ -1,0 +1,25 @@
+class mother:
+    def __init__(self,name,race="Beyaz"):
+        self.name = name
+        self.race = race
+        
+        print (f"{self.name} İrki {self.race}")
+class son(mother):
+    def writer(self,race):
+        super().__init__(race)
+        
+
+
+list = ["Selma","selma"]
+def motherchecker(m1):
+        a = list.count(mother_checker)
+        if a == 1:
+            print("Kişi Bulundu")
+            return(mother(m1))
+        else:
+            print("Kişi bulunamadı")
+        
+            
+
+mother_checker = input()
+motherchecker(mother_checker)
